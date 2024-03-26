@@ -1,34 +1,48 @@
-print("22.03  С ДНЕМ РОЖДЕНИЯ ♡♡♡♡♡♡♡")
+#задача 27
 
-#Задача 1 
+arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+arr2 = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37]
+arr3 = arr1 + arr2
+arr3 = list(set(arr3))
+print(arr3)
 
-a = int(input("Введите первое число "))
-b = int(input("Введите второе число "))
-if a > b:
-    print(a, " - max", b, " - min")
-elif a < b:
-    print(b, " - max", a, " - min")
-else:
-    print("Числа равны")
+#задача 28
 
-#Задача 2 
+B = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(B)
+count_nonzero = sum(map(lambda x: x.count(0), B))
+print(f"Количество ненулевых элементов: {count_nonzero}")
 
-a1 = int(input("Введите число для 1 стороны "))
-a2 = int(input("Введите число для 2 стороны "))
-a3 = int(input("Введите число для 3 стороны "))
-if ( a1 + a2 ) >= a3:
-    print("YES")
-elif(a1 + a3 ) >= a2:
-    print("YES")
-elif (a2 + a3 ) >= a1:
-    print("YES")
-else:
-    print("NO")
 
-#Задача 3 
+#задача 29 
 
-donnmee = int(input("Введите число "))
-if ( donnmee % 4 == 0 and donnmee % 100 != 0 ) or donnmee % 400 == 0:
-    print("YES")
-else:
-    print("NO")
+D = [[1, 2, 3], [4, -5, 6], [7, 8, 9]]
+print(D)
+negative_elements_product = 1
+for row in D:
+    for element in row:
+        if element < 0:
+            negative_elements_product *= element
+
+print(f"Произведение отрицательных элементов: {negative_elements_product}")
+
+#задача 30 
+
+B = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(B)
+positive_elements_product = 1
+for row in B:
+    for element in row:
+        if element > 0:
+            positive_elements_product *= element
+
+print(f"Произведение положительных элементов: {positive_elements_product}")
+
+#задача 31
+
+B = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(B)
+min_element = min(B)
+min_coords = B.index(min_element)
+print(f"Минимальный элемент: {min_element}")
+print(f"Координаты минимального элемента: {min_coords}")
