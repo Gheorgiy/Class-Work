@@ -1,3 +1,4 @@
+#coding: utf-8
     #задача 11 
 v = int(input("Объем: "))
 m = int(input("Масса: "))
