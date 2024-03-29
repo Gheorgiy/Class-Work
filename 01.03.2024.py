@@ -1,3 +1,4 @@
+#coding: utf-8
 #Задание 1 
 surname = input("Введите Фамилию: ")
 country = input("Введите страну: ")
