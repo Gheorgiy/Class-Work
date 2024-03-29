@@ -1,3 +1,4 @@
+#coding: utf-8
 #задача 15
 import random
 size = int(input("Введите размерность массива: "))
